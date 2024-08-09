@@ -36,7 +36,8 @@ internlm_hf = dict(type=HFTransformerCasualLM,
                    stop_words=['<|im_end|>'])
 
 gpt4 = dict(type=GPTAPI,
-            model_type='gpt-4-turbo',
+            model_type='gpt-4o-mini-2024-07-18',
+            openai_api_base='https://hk.rcouyi.com/',
             key=os.environ.get('OPENAI_API_KEY', 'YOUR OPENAI API KEY'))
 
 url = 'https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation'
