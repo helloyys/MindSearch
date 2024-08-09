@@ -20,7 +20,7 @@ def parse_arguments():
     parser = argparse.ArgumentParser(description='MindSearch API')
     parser.add_argument('--lang', default='cn', type=str, help='Language')
     parser.add_argument('--model_format',
-                        default='internlm_server',
+                        default='gpt4',
                         type=str,
                         help='Model format')
     return parser.parse_args()
